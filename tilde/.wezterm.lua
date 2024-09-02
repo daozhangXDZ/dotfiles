@@ -1,9 +1,38 @@
 local wezterm = require 'wezterm'
 local config = wezterm.config_builder()
 local session_manager = require 'wezterm-session-manager/session-manager'
+local default_prog = {}
+local launch_menu = {}
 
+
+-- Title
+function basename( s )
+    return string.gsub( s, '(.*[/\\])(.*)', '%2' )
+end
 --- 8< -- 8< ---
-
+if wezterm.target_triple == 'x86_64-pc-windows-msvc' then
+    table.insert( launch_menu, {
+        label = 'Git Bash',
+        args = { 'bash.exe', '-l'}
+     } )
+    table.insert( launch_menu, {
+        label = 'WSL',
+        args = { 'wsl.exe', '--cd', "/home/" }
+     } )
+    default_prog = { 'bash.exe', '-l' }
+elseif wezterm.target_triple == 'x86_64-unknown-linux-gnu' then
+    table.insert( launch_menu, {
+        label = 'Bash',
+        args = { 'bash', '-l' }
+     } )
+    default_prog = { 'bash', '-l' }
+else
+    table.insert( launch_menu, {
+        label = 'Zsh',
+        args = { 'zsh', '-l' }
+     } )
+    default_prog = { 'zsh', '-l' }
+end
 -- Fonts
 local font = 'Monaco'
 config.font = wezterm.font_with_fallback({
@@ -238,12 +267,14 @@ config.visual_bell = {
 }
 
 -- Misc
+config.native_macos_fullscreen_mode = true
+config.check_for_updates = false
 config.adjust_window_size_when_changing_font_size = false
 config.bold_brightens_ansi_colors = 'No'
 config.cursor_thickness = 3
 config.default_cursor_style = 'SteadyBar'
 config.default_cwd = wezterm.home_dir
-config.font_size = 15
+config.font_size = 14
 config.hyperlink_rules = wezterm.default_hyperlink_rules()
 config.inactive_pane_hsb = { saturation = 1.0, brightness = 0.8}
 config.line_height = 1.1
@@ -251,14 +282,44 @@ config.line_height = 1.1
 -- ref: https://en.wikipedia.org/wiki/Dead_key?ref=hackernoon.com
 config.use_dead_keys = false
 config.scrollback_lines = 10000
-config.show_new_tab_button_in_tab_bar = false
-config.switch_to_last_active_tab_when_closing_tab = true
-config.tab_max_width = 60
-config.use_fancy_tab_bar = false
-config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
-config.window_background_opacity = 0.95
-config.window_padding = { left = 12, right = 8, top = 12, bottom = 8}
 
+-- Tab bar >>>
+config.enable_tab_bar = true
+config.hide_tab_bar_if_only_one_tab = false
+config.show_tab_index_in_tab_bar = false
+config.tab_bar_at_bottom = false
+config.tab_max_width = 25
+config.use_fancy_tab_bar = true
+config.switch_to_last_active_tab_when_closing_tab = true
+-- Tab bar <<<
+
+config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
+config.window_background_opacity = 1.0
+config.window_padding = { left = 12, right = 8, top = 12, bottom = 8}
+config.default_prog = default_prog
+config.background = {
+        {
+            source = {
+                Color = "#394034",
+            },
+            hsb = {
+                hue = 1.0,
+                saturation = 1.02,
+                brightness = 0.25,
+            },
+            width = "100%",
+            height = "100%",
+            opacity = 0.88,
+        },
+        {
+            source = {
+                Color = "#282c35",
+            },
+            width = "100%",
+            height = "100%",
+            opacity = 0.55,
+        }
+    }
 local function get_current_working_dir(tab)
   local current_dir = tab.active_pane and tab.active_pane.current_working_dir or { file_path = '' }
   local HOME_DIR = string.format('file://%s', os.getenv('HOME'))
@@ -296,7 +357,7 @@ wezterm.on('gui-startup', function(cmd)
   local _, _, window = wezterm.mux.spawn_window(cmd or {})
 
   -- Open full screen
-  window:gui_window():maximize()
+  -- window:gui_window():maximize()
 
   -- Restore previous session state
   session_manager.restore_state(window:gui_window())

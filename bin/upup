@@ -53,11 +53,6 @@ brew cleanup
 brew doctor
 echo
 
-# Raycast
-header "Updating Raycast and its extensions..."
-open raycast://extensions/raycast/raycast/check-for-updates
-open raycast://extensions/raycast/raycast/check-for-extension-updates
-
 # npm
 header "Updating global npm modules..."
 npm update -g

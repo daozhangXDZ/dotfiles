@@ -1,6 +1,6 @@
 environment {
     terminal "WezTerm"
-    textEditor "CotEditor"
+    textEditor "Code"
 }
 
 behavior {
@@ -38,7 +38,7 @@ etty {
 fonts {
     actionBar [ "Default" 13 ]
     virtualTabs [ "Default Bold" 13 ]
-    files [ "Default" 13 ]
+    files [ "Default" 14 ]
     statusBar [ "Default Light" 13 ]
     tabs [ "Default" 11 ]
     preferences [ "Monaco" 14 ]

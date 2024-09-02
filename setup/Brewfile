@@ -49,69 +49,20 @@ brew "pkg-config"
 # GUI apps
 cask "1password@7" # Password manager
 cask "arc" # Modern browser
-cask "bartender" # Manage menu bar icons
-cask "cleanmymac" # System clean up manager
-cask "cleanshot" # Annotated screenshots & quick videos
 cask "coteditor" # Simple code/text editor
-# cask "discord" # Messaging social platform
-# cask "docker" # Running containerized applications
-cask "hazeover" # Fades out inactive windows
 cask "insomnia" # API client
-cask "itsycal" # Tiny popup calendar in a menu bar
 cask "keka" # File archiver and extractor
-# cask "ledger-live" # Crypto hardware wallet manager
 cask "marta" # File manager
-# cask "nordvpn" # VPN client
-cask "notion" # Note-taking app
+cask "obsidian" # Note-taking app
 cask "optimage" # Image optimization
-cask "qobuz" # Hi-rez audio streaming platform
-cask "raycast" # All-in-one app / tasks launcher
 cask "rectangle" # Window manager
 cask "rocket" # Handy emojis picker
-# cask "slack" # Messaging social platform
+cask "slack" # Messaging social platform
 cask "superduper" # Data backup
 cask "syntax-highlight", args: { no_quarantine: true } # Preview many different source code files
-cask "tableplus" # Database managmenent system
-# cask "telegram" # Messenger
-cask "visual-studio-code" # Code editor
+# cask "visual-studio-code" # Code editor use with dmg
 cask "vivaldi" # Browser with built-in privacy
-cask "wezterm" # Better terminal emulator
+# cask "wezterm" # Better terminal emulator use with dmg
 
 # Fonts
 cask "font-symbols-only-nerd-font"
-
-# VSCode extensions
-vscode "astro-build.astro-vscode"
-vscode "bierner.markdown-preview-github-styles"
-vscode "bradlc.vscode-tailwindcss"
-vscode "catppuccin.catppuccin-vsc-icons"
-vscode "davidanson.vscode-markdownlint"
-vscode "dbaeumer.vscode-eslint"
-vscode "editorconfig.editorconfig"
-vscode "esbenp.prettier-vscode"
-vscode "firsttris.vscode-jest-runner"
-vscode "github.vscode-pull-request-github"
-vscode "graphql.vscode-graphql-syntax"
-vscode "hashicorp.terraform"
-vscode "irongeek.vscode-env"
-vscode "kisstkondoros.vscode-gutter-preview"
-vscode "meganrogge.template-string-converter"
-vscode "ms-azuretools.vscode-docker"
-vscode "ms-vscode.node-debug2"
-vscode "naumovs.color-highlight"
-vscode "orta.vscode-twoslash-queries"
-vscode "prisma.prisma"
-vscode "redhat.vscode-yaml"
-vscode "sapegin.emoji-console-log"
-vscode "sapegin.just-blame"
-vscode "sapegin.mini-markdown"
-vscode "sapegin.theme-squirrelsonglight"
-vscode "sapegin.todo-tomorrow"
-vscode "sleistner.vscode-fileutils"
-vscode "sonarsource.sonarlint-vscode"
-vscode "sourcegraph.cody-ai"
-vscode "stkb.rewrap"
-vscode "streetsidesoftware.code-spell-checker"
-vscode "tekumara.typos-vscode"
-vscode "tombonnike.vscode-status-bar-format-toggle"
-vscode "usernamehw.errorlens"

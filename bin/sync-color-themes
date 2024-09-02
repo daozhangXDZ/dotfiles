@@ -12,9 +12,7 @@
 # > [x] CotEditor
 # > [x] Marta
 # > [x] Syntax Highlight
-# > [/] Bartender
 # > [/] Slack
-# > [/] Telegram
 # > [/] macOS
 #
 # - Get themes from the Squirrelsong repo:
@@ -233,22 +231,11 @@ echo "− Make sure that the ${BOLD}Allow extensions to load custom stylesheets$
 # --- 8< -- 8< ---
 
 #
-# Bartender: https://github.com/sapegin/squirrelsong/tree/master/themes/Bartender
-#
-
-header "☕ Install Bartender theme: https://github.com/sapegin/squirrelsong/tree/master/themes/Bartender"
-
-#
 # Slack: https://github.com/sapegin/squirrelsong/tree/master/themes/Slack
 #
 
 header "☕ Install Slack theme: https://github.com/sapegin/squirrelsong/tree/master/themes/Slack"
 
-#
-# Telegram: https://github.com/sapegin/squirrelsong/tree/master/themes/Telegram
-#
-
-header "☕ Install Telegram theme: https://github.com/sapegin/squirrelsong/tree/master/themes/Telegram"
 
 #
 # macOS: https://github.com/sapegin/squirrelsong/tree/master/themes/macOS

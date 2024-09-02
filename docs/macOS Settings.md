@@ -77,7 +77,6 @@
   - Networking and wireless
 - **Location Services** → **System Services** → **Show location icon in Control Centre…** − `On`
 - **App Management** − Enable these applications to update/delete other apps:
-  - Raycast
   - WezTerm (_to be able to run some patching scripts_)
 - **Analytics & Improvements** − Set everything to `Off`
 - **Apple Advertising** → **Personalised Ads** − `Off`

@@ -305,14 +305,14 @@ body dd {
 }
 
 body code {
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Monaco, Courier, monospace;
+  font-size: 14px;
 }
 
 body pre {
   margin-top: 0;
   margin-bottom: 0;
-  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font: 14px Consolas, "Liberation Mono", Monaco, Courier, monospace;
 }
 
 body .octicon {
