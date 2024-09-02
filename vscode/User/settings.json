@@ -504,5 +504,10 @@
     "variants"
   ],
   //glsl
-  "glsllint.glslangValidatorPath": "/Users/bytedance/Documents/systemsetting/glslangValidato/bin/glslangValidator",
+"glsllint.glslangValidatorPath": "/Users/bytedance/Documents/systemsetting/glslangValidato/bin/glslangValidator",
+"workbench.startupEditor": "none",
+"cSpell.enabled": false,
+"scm.showIncomingChanges": "never",
+"scm.showOutgoingChanges": "never",
+"scm.showChangesSummary": false,
 }

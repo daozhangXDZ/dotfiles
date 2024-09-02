@@ -3,11 +3,11 @@
 # general config
 
 [user]
-  name = Nick Plekhanov
-  email = nicksp@users.noreply.github.com
+	name = wumingfei
+	email = wumingfei@bytedance.com
 
 [github]
-  user = nicksp
+  user = daozhangXDZ
 
 [init]
   defaultBranch = main
@@ -63,8 +63,8 @@
 
 # Any GitHub repo with my username should be checked out r/w by default
 # http://rentzsch.tumblr.com/post/564806957/public-but-hackable-git-submodules
-[url "git@github.com:nicksp/"]
-  insteadOf = "git://github.com/nicksp/"
+[url "git@github.com:daozhang_xdz/"]
+  insteadOf = "git://github.com/daozhang_xdz/"
 
 # When accidentally cloning the HTTP version of a repository instead of the SSH version
 [url "git@github.com:"]
