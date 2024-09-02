@@ -47,7 +47,7 @@ My personal dotfiles for configuring macOS with Zsh and Homebrew.
         ssh -T git@github.com
         ```
 
-1. Install [MonoLisa font](https://www.monolisa.dev/)
+1. Install [Monaco font](https://www.Monaco.dev/)
 1. Choose _manual_ or _automatic_ dotfiles installation below
 
 ### Manually

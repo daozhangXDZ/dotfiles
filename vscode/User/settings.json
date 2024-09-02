@@ -273,9 +273,9 @@
   // Typography
   "workbench.fontAliasing": "auto",
 
-  // MonoLisa typography preset
+  // Monaco typography preset
   "editor.lineHeight": 1.55, // ? 0 has a similar effect and will automatically adjust based on the font-size.
-  "editor.fontFamily": "MonoLisa, \"Symbols Nerd Font Mono\"",
+  "editor.fontFamily": "Monaco, \"Symbols Nerd Font Mono\"",
   "editor.fontLigatures": "'calt' on, 'liga' off, 'zero' on, 'ss11' on, 'ss08' on",
   "editor.fontSize": 17,
 

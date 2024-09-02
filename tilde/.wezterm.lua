@@ -5,7 +5,7 @@ local session_manager = require 'wezterm-session-manager/session-manager'
 --- 8< -- 8< ---
 
 -- Fonts
-local font = 'MonoLisa'
+local font = 'Monaco'
 config.font = wezterm.font_with_fallback({
   { family = font, weight = 'Regular', italic = false },
   { family = 'Symbols Nerd Font Mono', scale = 1 },
