@@ -74,7 +74,7 @@
   },
   "scm.diffDecorationsIgnoreTrimWhitespace": "true",
   "scm.inputFontFamily": "editor",
-  "scm.inputFontSize": 16,
+  "scm.inputFontSize": 14,
   "scm.inputMaxLineCount": 20,
   "scm.inputMinLineCount": 4,
   "scm.showHistoryGraph": false,
